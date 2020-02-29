@@ -10,6 +10,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <div class="status-bar">
@@ -20,7 +21,7 @@
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
-        <span class="suatus-bar__battery-level">100%</span>
+        <span class="status-bar__battery-level">100%</span>
         <i class="fas fa-battery-full"></i>
       </div>
     </div>
@@ -44,19 +45,25 @@
       <ul class="chats__list">
         <li class="chats__chat">
           <a href="chat.html">
-            <div class="chat__column">
-              <img
-                class="chat__avator g-avator"
-                src="images/avatar.jpg"
-                alt=""
-              />
-              <div class="chat__content">
-                <span class="chat__username">Lynn</span>
-                <span class="chat_preview">Goingg home! </span>
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img
+                  src="images/avatar.jpg"
+                  alt=""
+                  class="m-avatar friend__avatar"
+                />
+                <div class="friend__content">
+                  <span class="friend__name">Lunn</span>
+                  <span class="friend__status">Going home!</span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+              <div class="friend__column">
+                <div class="friend__now-listening">
+                  <span class="chat__timestamp">
+                    March 8
+                  </span>
+                </div>
+              </div>
             </div>
           </a>
         </li>
@@ -71,6 +78,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
